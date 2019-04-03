@@ -22,7 +22,7 @@ RUN if grep -q Debian /etc/os-release && grep -q jessie /etc/os-release; then \
     && sudo apt-get update; sudo apt-get install -y openjdk-8-jre openjdk-8-jre-headless openjdk-8-jdk openjdk-8-jdk-headless \
   ; else \
     sudo apt-get update; sudo apt-get install -y openjdk-8-jre openjdk-8-jre-headless openjdk-8-jdk openjdk-8-jdk-headless \
-  ; fi \
+  ; if \
   && sudo apt-get install -y bzip2 libgconf-2-4 # for extracting firefox and running chrome, respectively
 
 # install firefox
